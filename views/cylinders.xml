@@ -1,0 +1,34 @@
+<?<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- window action -->
+		<!--
+			The following tag is an action definition for a "window action",
+			that is an action opening a view or a set of views
+		-->
+		<record model="ir.actions.act_window" id="course_list_action">
+			<field name="name">Cilindros</field>
+			<field name="res_model">cylinders.cylinder</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Creates new cylinders</p>
+			</field>
+		</record>
+
+		<!-- top level menu: no parent -->
+		<menuitem id="main_cilindros_menu" name="Cilindros" />
+		<!-- A first level in the left side menu is needed
+			before using action= attribute -->
+		<menuitem id="cilindros_menu" name="Cilindros"
+			parent="main_openacademy_menu"/>
+		<!-- the following menuitem should appear *after*
+			its parent cilindros_menu and *after* its
+			action gases_list_action -->
+		<menuitem id="gases_menu" name="Gases" parent="cilindros_menu"
+			action="cilindros_list_action"/>
+			<!-- Full id location:
+				action="cilindros.gases_list_action"
+				It is not required when it is the same module -->
+	</data>	
+</openerp>

@@ -1,0 +1,32 @@
+<openerp>
+  <data>
+  	<record model="cylinders.gastype" id="acetilene">
+  		<field name="name">Acetileno</field>
+  		<field name="description">
+  			Composición Química: C2H2
+  			Tipo de Gas: Combustible
+  		</field>
+  	</record>
+  	<record model="cylinders.gastype" id="oxygen">
+  		<field name="name">Oxigeno</field>
+  		<field name="description">
+  			Composición Química: O2
+  			Tipo de Gas: Comburente
+  		</field>
+  	</record>
+  	<record model="cylinders.gastype" id="argon">
+  		<field name="name">Acetileno</field>
+  		<field name="description">
+  			Composición Química: Ar
+  			Tipo de Gas: Neutro
+  		</field>
+  	</record>
+  	<record model="cylinders.gastype" id="indurmig">
+  		<field name="name">Acetileno</field>
+  		<field name="description">
+  			Composición Química: Ar(80)-CO2(20)
+  			Tipo de Gas: Neutro
+  		</field>
+  	</record>
+  </data>
+</openerp>
