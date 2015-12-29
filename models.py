@@ -38,7 +38,7 @@ class Cylinder(models.Model):
 class GasType(models.Model):
 	_name = 'cylinders.gastype'
 
-	name = fields.Char(string="Gas" required = True)
+	name = fields.Char(string="Gas", required=True)
 	description = fields.Text()
 
 	@api.multi
