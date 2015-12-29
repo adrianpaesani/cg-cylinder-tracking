@@ -11,7 +11,7 @@ class Cylinder(models.Model):
 	active = fields.Boolean(default=True)
 	available = fields.Boolean(default=True)
 
-	gas_id = fields.One2many(
+	gastype_id = fields.One2many(
 		'cylinders.gas', 'gastype_id', string="Gas_Type")
 
 	@api.multi
