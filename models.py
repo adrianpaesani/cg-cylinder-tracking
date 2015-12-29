@@ -25,8 +25,8 @@ class Cylinder(models.Model):
 		else:
 			new_number = u"Copy of {} ({})".format(self.number, copied_count)
 
-	default['number'] = new_number
-	return super(Cylinder, self).copy(default)
+		default['number'] = new_number
+		return super(Cylinder, self).copy(default)
 
 	_sql_constraints = [
 		('number_unique',
@@ -52,8 +52,8 @@ class GasType(models.Model):
 		else:
 			new_name = u"Copy of {} ({})".format(self.name, copied_count)
 
-	default['name'] = new_name
-	return super(GasType, self).copy(default)
+		default['name'] = new_name
+		return super(GasType, self).copy(default)
 
 	_sql_constraints = [
 		('number_unique',
