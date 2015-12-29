@@ -11,7 +11,7 @@
 							<field name="numero"/>
 							<field name="active"/>
 							<field name="available"/>
-							<field name="gastype_id"/>
+							
 						</group>
 					</sheet>
 				</form>				
