@@ -1,6 +1,22 @@
 <?<?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 	<data>
+		<record model="ir.ui.view" id="course_form_view">
+			<field name="name">cilindros.form</field>
+			<field name="model">cylinders.cylinder</field>
+			<field name="arch" type="xml">
+				<form string="Cylinders Form">
+					<sheet>
+						<group>
+							<field name="numero"/>
+							<field name="active"/>
+							<field name="available"/>
+							<field name="gas_id"/>
+						</group>
+					</sheet>
+				</form>				
+			</field>
+		</record>
 		<!-- window action -->
 		<!--
 			The following tag is an action definition for a "window action",
@@ -30,5 +46,5 @@
 			<!-- Full id location:
 				action="cilindros.gases_list_action"
 				It is not required when it is the same module -->
-	</data>	
+	</data>
 </openerp>
