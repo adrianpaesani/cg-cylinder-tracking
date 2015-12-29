@@ -11,8 +11,8 @@ class Cylinder(models.Model):
 	active = fields.Boolean(default=True)
 	available = fields.Boolean(default=True)
 
-	gastype_id = fields.One2many(
-		'cylinders.gastype', 'gastype_id', string="Gas_Type")
+	#gastype_id = fields.One2many(
+	#	'cylinders.gastype', 'gastype_id', string="Gas_Type")
 
 	@api.multi
 	def copy(self, default=None):
