@@ -12,7 +12,7 @@ class Cylinder(models.Model):
 	available = fields.Boolean(default=True)
 
 	gas_id = fields.Many2one(
-		'cylinders.gas', 'gas_id', string="Gas Type")
+		'cylinders.gas', 'gas_id', string="Gas_Type")
 
 	@api.multi
 	def copy(self, default=None):
